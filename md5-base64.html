@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="md5.js"></script>
+    <script src="base64.js"></script>
+
+</head>
+<body>
+
+<script>
+    var password = "abcdefg";
+    console.log("MD5.hex："+md5.hex(password));
+    console.log("MD5.array："+md5.array(password));
+    console.log("MD5.digest："+md5.digest(password));
+    console.log("MD5.buffer："+md5.buffer(password));
+    console.log("MD5.base64："+md5.base64(password));
+    var b=Base64.btoa(password);
+    console.log(password,b,Base64.atob(b),password===Base64.atob(b));
+</script>
+
+</body>
+</html>
